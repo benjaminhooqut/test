@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Gamers Rise Up</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Gamers Rise Up!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/creation.html">Create an event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/history.html">Booking History</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../HTML/FPS.html">First Person Shooters</a></li>
+                            <li><a class="dropdown-item" href="../HTML/MOBA.html">Multiplayer online battle arena</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../HTML/DCCG.html">Digital Collectible Card Game</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a class="btn" href="../HTML/login.html" role=button>Log in</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <!-- main body content, will contain cards that display events that can link to viewing details or booking   -->
+    <div class="container-fluid">
+        <div id="carouselExampleInterval" class="carousel slide mb-4" data-bs-ride="carousel">
+            <!--carousel opener-->
+            <div class="c-wrapper">
+                <!--ignore div c-wrapper, it's part of css-->
+                <div class="carousel-inner">
+                    <!--carousel images input here, 1000 interval = 1 second-->
+                    <div class="carousel-item active" data-bs-interval="2500">
+                        <img src="../img/csgo.jpg" alt="..." style="width: 100%;">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="../img/league.jpg" alt="..." style="width: 100%">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="../img/dota.jpg" alt="..." style="width: 100%">
+                    </div>
+                    <div class=" carousel-item" data-bs-interval="2500">
+                        <img src="../img/shadowverse.jpg" alt="..." style="width: 100%">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="../img/valorant.jpg" alt="..." style="width: 100%">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="../img/hearthstone.jpg" alt="..." style="width: 100%">
+                    </div>
+                </div>
+                <!--button control-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!--carousel ender-->
+        <div class="row mb-5">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card" style="width: 20rem">
+                    <img src="../img/csgo.jpg" class="card-img-top" alt="csgo img missing">
+                    <div class="card-body">
+                        <h5 class="card-title">CSGO University Tournament Finals</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Cancelled</h6>
+                        <p class="card-text">Here we go, final match of the tournament pits both QUT and UQ against
+                            each
+                            other.
+                            Don't miss out book tickets now</p>
+                        <a href="details.html" class="btn btn-primary">View Details</a>
+                        <a href="history.html" class="btn btn-primary">Book Tickets</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card" style="width: 20rem;">
+                    <img src="../img/league.jpg" class="card-img-top" alt="league img missing">
+                    <div class="card-body">
+                        <h5 class="card-title">LOL University Tournament Finals</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Upcoming</h6>
+                        <p class="card-text">Here we go, final match of the tournament pits both QUT and Griffith
+                            against each
+                            other.
+                            Don't miss out book tickets now</p>
+                        <a href="details.html" class="btn btn-primary">View Details</a>
+                        <a href="history.html" class="btn btn-primary">Book Tickets</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card" style="width: 20rem;">
+                    <img src="../img/valorant.jpg" class="card-img-top" alt="valorant img missing">
+                    <div class="card-body">
+                        <h5 class="card-title">Valorant University Tournament Finals</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Active</h6>
+                        <p class="card-text">Here we go, final match of the tournament pits both QUT and ACU against
+                            each
+                            other.
+                            Don't miss out book tickets now</p>
+                        <a href="details.html" class="btn btn-primary">View Details</a>
+                        <a href="history.html" class="btn btn-primary">Book Tickets</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card" style="width: 20rem;">
+                    <img src="../img/hearthstone.jpg" class="card-img-top" alt="league img missing">
+                    <div class="card-body">
+                        <h5 class="card-title">Hearthstone University Tournament Finals</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Upcoming</h6>
+                        <p class="card-text">Here we go, final match of the tournament pits both QUT and Griffith
+                            against each
+                            other.
+                            Don't miss out book tickets now</p>
+                        <a href="details.html" class="btn btn-primary">View Details</a>
+                        <a href="history.html" class="btn btn-primary">Book Tickets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+<footer>
+    <div class="container-fluid">
+        <p>Created by: Benjamin Hoo</p>
+        <a href="http://www.google.com">Support center</a>
+    </div>
+</footer>
+
+</html>
